@@ -15,19 +15,19 @@
 						<key>kind</key>
 						<string>software-package</string>
 						<key>url</key>
-						<string>https://github.com/Am1nCmd/IPA/releases/download/WAStickersJB/WAStickersJB_nextdev.ipa</string>
+						<string>https://github.com/Am1nCmd/IPA/releases/download/WAStickersrJB/WAStickersrJB_nextdev.ipa</string>
 					</dict>
 				</array>
 				<key>metadata</key>
 			<dict>
 				<key>bundle-identifier</key>
-				<string>id.amincmd.WAStickersJB</string>
+				<string>id.amincmd.WAStickersrJB</string>
 				<key>bundle-version</key>
 				<string>5.4</string>
 				<key>kind</key>
 				<string>software</string>
 				<key>title</key>
-				<string>WAStickersJB</string>
+				<string>WAStickersrJB</string>
 			</dict>
 		</dict>
 	</array>
