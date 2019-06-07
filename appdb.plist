@@ -1,4 +1,4 @@
-
+<?xml version="1.0" encoding="UTF-8"?>
 
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -17,27 +17,11 @@
 						<key>url</key>
 						<string>https://github.com/Am1nCmd/IPA/releases/download/appdb/appdb_1.0_nextdev.ipa</string>
 					</dict>
-					<dict>
-						<key>kind</key>
-						<string>display-image</string>
-						<key>needs-shine</key>
-						<true/>
-						<key>url</key>
-						<string>https://pulandres.me/jb/images/pul.png</string>
-					</dict>
-					<dict>
-						<key>kind</key>
-						<string>full-size-image</string>
-						<key>needs-shine</key>
-						<true/>
-						<key>url</key>
-						<string>https://pulandres.me/jb/images/pul.png</string>
-					</dict>
 				</array>
 				<key>metadata</key>
 			<dict>
 				<key>bundle-identifier</key>
-				<string>id.appdb.am1ncmd</string>
+				<string>id.amincmd.appdb</string>
 				<key>bundle-version</key>
 				<string>5.4</string>
 				<key>kind</key>
