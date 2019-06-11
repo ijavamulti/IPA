@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+ <?xml version="1.0" encoding="UTF-8"?>
 
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -15,19 +15,19 @@
 						<key>kind</key>
 						<string>software-package</string>
 						<key>url</key>
-						<string>https://doc-0s-cc-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/7a5un578cqe81vmpr23cpsak8uba2nik/1560168000000/12603796320330246417/*/1WHNhXa-kjc0RsJWkqymN4BGqUhA1_XtG?e=download</string>
+						<string>https://github.com/Am1nCmd/IPA/releases/download/Netwa/Netwa_nextdev.ipa</string>
 					</dict>
 				</array>
 				<key>metadata</key>
 			<dict>
 				<key>bundle-identifier</key>
-				<string>id.amincmd.appdb</string>
+				<string>id.amincmd.Netwa</string>
 				<key>bundle-version</key>
 				<string>5.4</string>
 				<key>kind</key>
 				<string>software</string>
 				<key>title</key>
-				<string>appdb</string>
+				<string>Netwa</string>
 			</dict>
 		</dict>
 	</array>
