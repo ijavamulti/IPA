@@ -17,9 +17,9 @@
 			<key>metadata</key>
 			<dict>
 				<key>bundle-identifier</key>
-				<string>id.amincmd.InstagramPlus</string>
+				<string>id.am1ncmd.InstagramPlus</string>
 				<key>bundle-version</key>
-				<string>5.4</string>
+				<string>2.7.3</string>
 				<key>kind</key>
 				<string>software</string>
 				<key>title</key>
