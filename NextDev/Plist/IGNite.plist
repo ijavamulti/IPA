@@ -17,13 +17,13 @@
 			<key>metadata</key>
 			<dict>
 				<key>bundle-identifier</key>
-				<string>id.am1ncmd.InstagramPlus</string>
+				<string>id.am1ncmd.IGNite</string>
 				<key>bundle-version</key>
 				<string>5.4</string>
 				<key>kind</key>
 				<string>software</string>
 				<key>title</key>
-				<string>Instagram++</string>
+				<string>IGNite</string>
 			</dict>
 		</dict>
 	</array>
