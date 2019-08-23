@@ -17,7 +17,7 @@
 			<key>metadata</key>
 			<dict>
 				<key>bundle-identifier</key>
-				<string>id.amincmd.Chimera</string>
+				<string>com.electrateam.chimera</string>
 				<key>bundle-version</key>
 				<string>5.4</string>
 				<key>kind</key>
