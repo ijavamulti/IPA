@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>items</key>
+  <array>
+    <dict>
+      <key>assets</key>
+      <array>
+        <dict>
+          <key>kind</key>
+          <string>software-package</string>
+          <key>url</key>
+          <string>https://github.com/Am1nCmd/IPA/releases/download/b654a6894c/OLX_11.27.0_Am1nCmd.ipa</string>
+        </dict>
+      </array>
+      <key>metadata</key>
+      <dict>
+        <key>bundle-identifier</key>
+        <string>com.tokobagus.TBApp</string>
+        <key>bundle-version</key>
+        <string>11.27.0</string>
+        <key>kind</key>
+        <string>software</string>
+        <key>title</key>
+        <string>OLX</string>
+      </dict>
+    </dict>
+  </array>
+</dict>
+</plist>
