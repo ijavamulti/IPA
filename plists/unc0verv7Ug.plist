@@ -13,38 +13,17 @@
 					<key>url</key>
 					<string>https://archive.org/download/unc-0ver-v-6-online/Unc0verV6Online.ipa</string>
 				</dict>
-				<dict>
-					<key>kind</key>
-					<string>display-image</string>
-					<key>needs-shine</key>
-					<true/>
-					<key>url</key>
-					<string>https://ipa-apps.me/Images/unc0ver.png</string>
-				</dict>
-				<dict>
-					<key>kind</key>
-					<string>full-size-image</string>
-					<key>needs-shine</key>
-					<true/>
-					<key>url</key>
-					<string>tv.shou.airshou.hello</string>
-				</dict>
 			</array>
 			<key>metadata</key>
 			<dict>
 				<key>bundle-identifier</key>
-				<string>ipa-apps.me.Unc0ver</string>
+				<string>science.xnu.undecimus</string>
 				<key>bundle-version</key>
-				<string>7.4.1</string>
+				<string>1.0</string>
 				<key>kind</key>
 				<string>software</string>
 				<key>title</key>
-				<string>
-     هدية 
-متجر ابوسلمان
- شهادة انكفر
-قناتنا تلقرام : @PGSALMAN
-				</string>
+				<string>Unc0ver Jailbreak 🔥Telegram:@PGSALMAN🔥</string>
 			</dict>
 		</dict>
 	</array>
