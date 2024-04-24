@@ -11,8 +11,7 @@
                             <key>kind</key>
                             <string>software-package</string>
                             <key>url</key>
-                            <string>https://up4net.com/65e/Drrma1.ipa?download_token=333776eca866dc2f5df223e3e3d3d5a9d5a524b50ba288289ab7ce8b888ab199
-</string>
+                            <string>https://archive.org/download/drrma-1/Drrma1.ipa</string>
                         </dict>
                         <dict>
                         <key>kind</key>
@@ -20,7 +19,7 @@
                         <key>needs-shine</key>
                         <true/>
                         <key>url</key>
-                        <string>https://ipa-appel.site/img/dr.png</string>
+                        <string>https://i.ibb.co/F0LZHLy/images-1-1.png</string>
                         </dict>
                     </array>
                     <key>metadata</key>
