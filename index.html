@@ -107,12 +107,12 @@
     </style>
 </head>
 <body>
+                    <audio id="clickSound" src="click-sound.mp3" preload="auto"></audio>
     <div class="welcome-message">
         <p>حياكم الله في موقعي</p>
     </div>
     
     <div class="header">
-                <audio id="clickSound" src="click-sound.mp3" preload="auto"></audio>
         <div class="animated-name">JAVAMULTI</div>
                <!-- العد التنازلي -->
        <h2>العد التنازلي</h2>
@@ -168,9 +168,12 @@
                    clearInterval(x);
                    document.getElementById("countdown").innerHTML = "انتهى الوقت!";
                }
-           }, 1000);
+           }, 1000);         
+       </script>
 
-               var buttons = document.getElementsByTagName('button');
+    <script>
+    // احصل على جميع الأزرار في الصفحة
+    var buttons = document.getElementsByTagName('button');
     var sound = document.getElementById('clickSound');
 
     // أضف حدث النقر لكل زر
@@ -179,8 +182,8 @@
             sound.play();
         });
     }
-           
-       </script>
+</script>
+
     
     
     
