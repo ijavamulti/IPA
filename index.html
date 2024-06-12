@@ -1,175 +1,109 @@
+لجعل متجر التطبيقات يبدو مميزًا وحديثًا، يمكننا تحسين التصميم باستخدام تقنيات مثل CSS المتقدمة، بالإضافة إلى بعض الجافا سكريبت لتحسين التجربة التفاعلية للمستخدم. سأقدم لك مثالًا لمتجر التطبيقات المحسن:
+
+```html
 <!DOCTYPE html>
 <html lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تطبيقاتي</title>
-            <link rel="icon" href="favicon.ico" type="image/x-icon"> 
+    <title>متجر التطبيقات المميز</title>
     <style>
-
-              .welcome-message {
-            text-align: center;
-            margin-top: 50px;
-            font-size: 24px;
-            color: Red; /* هنا تقوم بتغيير اللون إلى الأزرق */
-        }
-        
         body {
-            background-image: url('https://i.ibb.co/CV1VmX5/Design-Image.jpg');
-            background-size: cover; /* غطي كامل الشاشة بالصورة */
-            background-repeat: no-repeat; /* لا تعيد الصورة */
-            background-attachment: fixed; /* تبقَ الخلفية ثابتة عند التمرير */
-            background-position: center; /* مركز الصورة في الشاشة */
-            text-align: center;
-            font-family: Sabon, sans-serif;
-            background-color: #000000;
+            font-family: 'Arial', sans-serif;
+            direction: rtl;
+            background: linear-gradient(to right, #ece9e6, #ffffff);
             margin: 0;
+            color: #333;
         }
-        .header {
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
             padding: 20px;
-            background-color: #c51537;
-            color: black;
         }
-        .header .name {
-            font-size: 48px;
-        }
-        .content {
-            margin: 20px;
+        header {
+            background: #5cb85c;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 20px;
         }
         .app {
-            background-color: black;
-            padding: 10px;
-            margin: 10px;
+            background: white;
             border-radius: 8px;
-            -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            display: inline-block;
-            width: 200px;
-            text-align: center;
+            margin-bottom: 20px;
+            overflow: hidden;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .app:hover {
+            transform: translateY(-10px);
         }
         .app img {
-            width: 100px;
-            height: 100px;
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
         }
-        .app a {
-            display: block;
-            margin-top: 10px;
-            padding: 10px;
-            font-size: 16px;
-            color: black;
-            background-color: #e2133b;
+        .app-details {
+            padding: 15px;
+        }
+        .app h2 {
+            font-size: 24px;
+        }
+        .app p {
+            color: #666;
+            line-height: 1.6;
+        }
+        .btn-download {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #5cb85c;
+            color: white;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 4px;
+            transition: background 0.3s;
         }
-        .app a:hover {
-            background-color: #c51537;
+        .btn-download:hover {
+            background: #4cae4c;
         }
-           .animated-name {
-               font-size: 2em;
-               color: #333;
-               margin: 20px 0;
-               animation: move-in 3s ease-out infinite alternate;
-           }
-
-           @keyframes move-in {
-               0% {
-                   opacity: 0;
-                   transform: translateX(-100px);
-               }
-               100% {
-                   opacity: 1;
-                   transform: translateX(0);
-               }
-           }
-        
-                   }
-        
-
-           /* تنسيق العد التنازلي */
-           .countdown {
-               font-size: 2em;
-               color: #333;
-               margin: 20px 0;
-           }
-        
-  
-        footer {
-            background-color: #f1f1f1; /* لون خلفية الفوتر */
-            text-align: center;       /* محاذاة النص في المنتصف */
-            padding: 10px;            /* تباعد داخلي */
-            position: fixed;          /* ثبات العنصر في أسفل الصفحة */
-            bottom: 0;                /* ثبات في الأسفل */
-            width: 100%;              /* يمتد على عرض الصفحة بالكامل */
-            font-size: 0.8em;         /* حجم خط أصغر */
-        }
-        
     </style>
 </head>
 <body>
-    <div class="welcome-message">
-        <p>مرحبًا بكم في موقعي!</p>
-    </div>
-    
-    <div class="header">
-        <div class="animated-name">JAVAMULTI</div>
-               <!-- العد التنازلي -->
-       <h2>العد التنازلي</h2>
-       <div id="countdown" class="countdown"></div>
+    <div class="container">
+        <header>
+            <h1>متجر التطبيقات المميز</h1>
+        </header>
+
+        <section class="app">
+            <img src="app1.jpg" alt="صورة تطبيق 1">
+            <div class="app-details">
+                <h2>تطبيق 1</h2>
+                <p>وصف قصير للتطبيق 1 الذي يشرح فوائده واستخداماته الرئيسية.</p>
+                <a href="http://example.com/download_app1" class="btn-download">تحميل</a>
+            </div>
+        </section>
+
+        <section class="app">
+            <img src="app2.jpg" alt="صورة تطبيق 2">
+            <div class="app-details">
+                <h2>تطبيق 2</h2>
+                <p>وصف قصير للتطبيق 2 الذي يشرح فوائده واستخداماته الرئيسية.</p>
+                <a href="http://example.com/download_app2" class="btn-download">تحميل</a>
+            </div>
+        </section>
         
+        <!-- يمكن إضافة المزيد من التطبيقات هنا -->
     </div>
-    <div class="content">
-        <div class="app">
-            <img src="https://telegram.org/img/t_logo.png" alt="Telegram">
-            <a href="https://t.me/ThatsWeCan">تواصل معي على تليجرام</a>
-        </div>
-        <!-- أضف المزيد من التطبيقات هنا -->
-        <div class="app">
-            <img src="https://i.ibb.co/F0LZHLy/images-1-1.png" alt="دراما تركية">
-            <a href="app_link_1"> قريبا</a>
-        </div>
-        <div class="app">
-            <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/a4/a5/81/a4a58174-5e5c-1cac-d3ae-e7b610bc3239/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.jpg" alt="افلام عزيز">
-            <a href="app_link_2">قريبا</a>
-        </div>
-        <!-- نسخ ولصق القسم السابق لإضافة المزيد من التطبيقات -->
-    </div>
-
-        <footer>
-        تم إنشاء الموقع من قبل : عبدالعزيز ابراهيم بتاريخ يونيو 2024
-    </footer>
-
-       <script>
-           // ضبط تاريخ نهاية العد التنازلي
-           var countDownDate = new Date("Jun 17, 2024 00:00:00").getTime();
-
-           // تحديث العد التنازلي كل ثانية
-           var x = setInterval(function() {
-
-               // الحصول على الوقت الحالي
-               var now = new Date().getTime();
-
-               // حساب الفرق بين الوقت الحالي ووقت النهاية
-               var distance = countDownDate - now;
-
-               // حساب الأيام والساعات والدقائق والثواني المتبقية
-               var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-               var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-               var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-               var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-               // عرض العد التنازلي في العنصر المحدد
-               document.getElementById("countdown").innerHTML = days + " يوم " + hours + " ساعة "
-               + minutes + " دقيقة " + seconds + " ثانية ";
-
-               // إذا انتهى العد التنازلي، عرض رسالة
-               if (distance < 0) {
-                   clearInterval(x);
-                   document.getElementById("countdown").innerHTML = "انتهى الوقت!";
-               }
-           }, 1000);
-       </script>
-    
-    
-    
 </body>
 </html>
+```
+
+### ملخص التحسينات:
+1. **خلفية متدرجة:** استخدام خلفية متعددة الألوان لتضيف لمسة حديثة.
+2. **تصميم اللوغو:** رأس الصفحة ذو الألوان الجذابة والنصوص الكبيرة.
+3. **بطاقات التطبيقات:** تحسين البطاقات لاحتواء صور وأوصاف التطبيقات وإضافة تأثيرات التحويم لجعلها تفاعلية.
+4. **أزرار التحميل:** أزرار تحميل مميزة بأشكال حديثة ومتجاوبة مع التأثيرات.
+
+يمكنك توسيع الأفكار باستخدام JavaScript للجعل الموقع تفاعلي أكثر، مثل إضافة سلايدر للصور، أو استخدام مكتبات تصاميم حديثة مثل React أو Bootstrap.
