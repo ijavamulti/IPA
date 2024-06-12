@@ -102,6 +102,44 @@
             width: 100%;              /* يمتد على عرض الصفحة بالكامل */
             font-size: 0.8em;         /* حجم خط أصغر */
         }
+
+             @keyframes wave {
+            0% { transform: rotate(0deg); }
+            50% { transform: rotate(2deg) translateY(-2px); }
+            100% { transform: rotate(0deg); }
+        }
+
+        .saudi-flag {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            background-color: #006C35;
+            color: white;
+            text-align: center;
+            font-size: 20px;
+            line-height: 200px;
+            animation: wave 2s infinite ease-in-out;
+            overflow: hidden;
+            border: 2px solid #006C35;
+        }
+
+        .saudi-flag::before {
+            content: "لا إله إلا الله محمد رسول الله";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .saudi-flag::after {
+            content: "\2694";
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 50px;
+        }
+
         
     </style>
 </head>
@@ -109,6 +147,8 @@
     <div class="welcome-message">
         <p>مرحبًا بكم في موقعي!</p>
     </div>
+        <h1>علم المملكة العربية السعودية</h1>
+    <div class="saudi-flag"></div>
     
     <div class="header">
         <div class="animated-name">JAVAMULTI</div>
