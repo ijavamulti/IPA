@@ -205,6 +205,11 @@
         تم إنشاء الموقع من قبل : عبدالعزيز ابراهيم بتاريخ يونيو 2024
     </footer>
 
+        <footer id="footer">
+        <!-- هنا سيتم إضافة اسم الجهاز بواسطة JavaScript -->
+    </footer>
+    
+
        <script>
            // ضبط تاريخ نهاية العد التنازلي
            var countDownDate = new Date("Jun 17, 2024 00:00:00").getTime();
@@ -236,6 +241,28 @@
            }, 1000);         
        </script>
 
+    <script>
+function getDeviceType() {
+    const ua = navigator.userAgent;
+    if (/mobile/i.test(ua)) {
+        return "هاتف متنقل";
+    } else if (/tablet/i.test(ua)) {
+        return "جهاز لوحي";
+    } else if (/iPad|Mac|PC|Windows/i.test(ua)) {
+        return "جهاز كمبيوتر";
+    } else {
+        return "جهاز غير معروف";
+    }
+}
+
+window.onload = function() {
+    const deviceInfo = getDeviceType();
+    const footer = document.getElementById('footer');
+    const deviceElement = document.createElement('p');
+    deviceElement.textContent = 'اسم جهازك: ' + deviceInfo;
+    footer.appendChild(deviceElement);
+};
+</script>
     
     
     
