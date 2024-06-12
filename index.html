@@ -112,6 +112,7 @@
     </div>
     
     <div class="header">
+                <audio id="clickSound" src="click-sound.mp3" preload="auto"></audio>
         <div class="animated-name">JAVAMULTI</div>
                <!-- العد التنازلي -->
        <h2>العد التنازلي</h2>
@@ -168,6 +169,17 @@
                    document.getElementById("countdown").innerHTML = "انتهى الوقت!";
                }
            }, 1000);
+
+               var buttons = document.getElementsByTagName('button');
+    var sound = document.getElementById('clickSound');
+
+    // أضف حدث النقر لكل زر
+    for (var i = 0; i < buttons.length; i++) {
+        buttons[i].addEventListener('click', function() {
+            sound.play();
+        });
+    }
+           
        </script>
     
     
