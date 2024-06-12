@@ -51,7 +51,24 @@
         .app a:hover {
             background-color: #c51537;
         }
+           .animated-name {
+               font-size: 2em;
+               color: #333;
+               margin: 20px 0;
+               animation: move-in 3s ease-out infinite alternate;
+           }
 
+           @keyframes move-in {
+               0% {
+                   opacity: 0;
+                   transform: translateX(-100px);
+               }
+               100% {
+                   opacity: 1;
+                   transform: translateX(0);
+               }
+           }
+        
         footer {
             background-color: #f1f1f1; /* لون خلفية الفوتر */
             text-align: center;       /* محاذاة النص في المنتصف */
@@ -67,7 +84,7 @@
 <body>
 
     <div class="header">
-        <div class="name">JAVAMULTI</div>
+        <div class="animated-name">JAVAMULTI</div>
     </div>
     <div class="content">
         <div class="app">
