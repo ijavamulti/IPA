@@ -119,36 +119,36 @@
         تم إنشاء الموقع من قبل : عبدالعزيز ابراهيم بتاريخ يونيو 2024
     </footer>
 
-           <script>
-           // ضبط تاريخ نهاية العد التنازلي
-           var countDownDate = new Date("Jun 17, 2024 00:00:00").getTime();
+    <script>
+‎        // تعيين تاريخ ووقت انتهاء العد التنازلي
+        var countDownDate = new Date("Jun 17, 2023 23:59:59").getTime();
 
-           // تحديث العد التنازلي كل ثانية
-           var x = setInterval(function() {
+‎        // تحديث العد التنازلي كل ثانية
+        var x = setInterval(function() {
 
-               // الحصول على الوقت الحالي
-               var now = new Date().getTime();
-
-               // حساب الفرق بين الوقت الحالي ووقت النهاية
-               var distance = countDownDate - now;
-
-               // حساب الأيام والساعات والدقائق والثواني المتبقية
-               var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-               var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-               var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-               var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-               // عرض العد التنازلي في العنصر المحدد
-               document.getElementById("countdown").innerHTML = days + " :يوم " + hours + "ساعة : "
-               + minutes + " :دقيقة " + seconds + ":ثانية ";
-
-               // إذا انتهى العد التنازلي، عرض رسالة
-               if (distance < 0) {
-                   clearInterval(x);
-                   document.getElementById("countdown").innerHTML = "انتهى الوقت!";
-               }
-           }, 1000);
-       </script>
+‎            // الحصول على التاريخ والوقت الحالي
+            var now = new Date().getTime();
+            
+‎            // حساب الفرق بين الوقت الحالي ووقت انتهاء العد التنازلي
+            var distance = countDownDate - now;
+            
+‎            // حساب الوقت بالأيام، الساعات، الدقائق، والثواني
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+‎            // عرض النتيجة في عنصر معين
+            document.getElementById("countdown").innerHTML = hours + "h "
+            + minutes + "m " + seconds + "s ";
+            
+‎            // إيقاف العد التنازلي عند انتهاء الوقت
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
+    
     
 </body>
 </html>
