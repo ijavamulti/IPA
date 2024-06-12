@@ -69,6 +69,14 @@
                }
            }
         
+                   }
+           /* تنسيق العد التنازلي */
+           .countdown {
+               font-size: 2em;
+               color: #333;
+               margin: 20px 0;
+           }
+  
         footer {
             background-color: #f1f1f1; /* لون خلفية الفوتر */
             text-align: center;       /* محاذاة النص في المنتصف */
@@ -85,6 +93,10 @@
 
     <div class="header">
         <div class="animated-name">JAVAMULTI</div>
+               <!-- العد التنازلي -->
+       <h2>العد التنازلي</h2>
+       <div id="countdown" class="countdown"></div>
+        
     </div>
     <div class="content">
         <div class="app">
@@ -106,5 +118,37 @@
         <footer>
         تم إنشاء الموقع من قبل : عبدالعزيز ابراهيم بتاريخ يونيو 2024
     </footer>
+
+           <script>
+           // ضبط تاريخ نهاية العد التنازلي
+           var countDownDate = new Date("Jan 1, 2024 00:00:00").getTime();
+
+           // تحديث العد التنازلي كل ثانية
+           var x = setInterval(function() {
+
+               // الحصول على الوقت الحالي
+               var now = new Date().getTime();
+
+               // حساب الفرق بين الوقت الحالي ووقت النهاية
+               var distance = countDownDate - now;
+
+               // حساب الأيام والساعات والدقائق والثواني المتبقية
+               var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+               var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+               var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+               var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+               // عرض العد التنازلي في العنصر المحدد
+               document.getElementById("countdown").innerHTML = days + "يوم " + hours + "ساعة "
+               + minutes + "دقيقة " + seconds + "ثانية ";
+
+               // إذا انتهى العد التنازلي، عرض رسالة
+               if (distance < 0) {
+                   clearInterval(x);
+                   document.getElementById("countdown").innerHTML = "انتهى الوقت!";
+               }
+           }, 1000);
+       </script>
+    
 </body>
 </html>
