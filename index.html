@@ -1,55 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="ar">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>تطبيقات عزيز</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تطبيقاتي</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
             text-align: center;
-            padding: 20px;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
         }
-        .container {
-            max-width: 600px;
-            margin: auto;
-            background: white;
+        .header {
             padding: 20px;
+            background-color: #4CAF50;
+            color: white;
+        }
+        .header .name {
+            font-size: 48px;
+        }
+        .content {
+            margin: 20px;
+        }
+        .app {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
             border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        h1 {
-            color: #333;
-        }
-        .download-button {
+            -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             display: inline-block;
-            margin: 30px;
-            padding: 30px 100px;
+            width: 200px;
+            text-align: center;
+        }
+        .app img {
+            width: 100px;
+            height: 100px;
+        }
+        .app a {
+            display: block;
+            margin-top: 10px;
+            padding: 10px;
             font-size: 16px;
             color: white;
-            background-color: #007bff;
+            background-color: #0088cc;
             text-decoration: none;
             border-radius: 5px;
-            transition: background-color 0.3s;
         }
-        .download-button:hover {
-            background-color: #0056b3;
-        }
-        .footer {
-            margin-top: 20px;
-            font-size: 12px;
-            color: #666;
+        .app a:hover {
+            background-color: #005f8a;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>تم توقيع تطبيقات عزيز</h1>
-        <a class="download-button" href="https://is.gd/LWAQvR">دراما تركية</a>
-                <a class="download-button" href="https://is.gd/wWF2X5">افلام عزيز</a>
-        <div class="footer">
-            &copy; 2023 Abdulaziz Ibrahim. All rights reserved.
-        </div>
+
+    <div class="header">
+        <div class="name">JAVAMULTI</div>
+        color: red;
     </div>
+    <div class="content">
+        <div class="app">
+            <img src="https://telegram.org/img/t_logo.png" alt="Telegram">
+            <a href="https://t.me/ThatsWeCan">تواصل معي على تليجرام</a>
+        </div>
+        <!-- أضف المزيد من التطبيقات هنا -->
+        <div class="app">
+            background-color: red;
+    color: white;
+            <img src="app_image_url_1" alt="App 1">
+            <a href="app_link_1">تنزيل التطبيق 1</a>
+        </div>
+        <div class="app">
+            background-color: red;
+    color: white;
+            <img src="app_image_url_2" alt="App 2">
+            <a href="app_link_2">تنزيل التطبيق 2</a>
+        </div>
+        <!-- نسخ ولصق القسم السابق لإضافة المزيد من التطبيقات -->
+    </div>
+
 </body>
 </html>
